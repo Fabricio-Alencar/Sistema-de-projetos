@@ -1,5 +1,5 @@
 
-# 🚀 Projack Impulse — Central de Projetos
+# 🚀 Projack Impulse — Sistema de Projetos
 
 > Plataforma web desenvolvida para centralizar a criação, organização e gerenciamento de projetos, permitindo que usuários acompanhem seus projetos, informações de perfil, colaboradores, tecnologias e repositórios.
 
