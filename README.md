@@ -1,3 +1,4 @@
+
 # 🚀 Projack Impulse — Central de Projetos
 
 > Plataforma web desenvolvida para centralizar a criação, organização e gerenciamento de projetos, permitindo que usuários acompanhem seus projetos, informações de perfil, colaboradores, tecnologias e repositórios.
@@ -9,6 +10,17 @@ O **Projack Impulse** é uma plataforma web voltada para a organização e geren
 A aplicação permite que usuários criem e visualizem seus projetos, mantenham informações de perfil, adicionem tecnologias e repositórios relacionados aos projetos e gerenciem colaboradores e solicitações de participação.
 
 O sistema possui uma interface com identidade visual própria, inspirada em uma temática espacial, utilizando elementos como foguetes, estrelas e astronautas para representar a ideia de exploração e desenvolvimento de novos projetos.
+
+## 🧩 Ecossistema de Microsserviços
+
+O **Projack Impulse** utiliza uma arquitetura baseada em microsserviços. Este repositório é responsável pelo **Front-end / Aplicação Principal**, enquanto outras regras de negócio e inteligências estão distribuídas em serviços independentes.
+
+> **Nota para desenvolvedores:** Os repositórios dos microsserviços abaixo são independentes e podem utilizar diferentes linguagens, dependências ou estruturas de pastas em relação a este repositório principal.
+
+* **Front-end / Interface (Este repositório):** Interface gráfica, navegação e integração visual com as APIs.
+* **Microsserviço de IA:** `[Cole o link do repositório da IA aqui]` — Responsável pelos algoritmos de recomendação e seleção de colaboradores.
+* **Microsserviço de Back-end / Autenticação:** `[Cole o link do repositório aqui]` — Gerenciamento de usuários, autenticação e dados centrais.
+* **[Outro Microsserviço]:** `[Cole o link do repositório aqui]` — *Descrição resumida do serviço.*
 
 ## ✨ Funcionalidades
 
@@ -121,6 +133,7 @@ Fronts_Projeto-main/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
 ```
 
 ## 🔄 Fluxo da aplicação
@@ -129,7 +142,7 @@ O fluxo principal da plataforma pode ser representado da seguinte forma:
 
 ```text
                     ┌──────────────┐
-                    │     Login    │
+                    │    Login     │
                     └──────┬───────┘
                            │
                            ▼
@@ -145,19 +158,20 @@ O fluxo principal da plataforma pode ser representado da seguinte forma:
              ┌─────────────┼─────────────┐
              ▼             ▼             ▼
        Criar projeto   Pesquisar     Selecionar
-                       projetos      projeto
-                                         │
-                                         ▼
-                                ┌─────────────────┐
-                                │ Detalhes projeto│
-                                └────────┬────────┘
-                                         │
-                   ┌─────────────────────┼─────────────────────┐
-                   ▼                     ▼                     ▼
-              Tecnologias          Repositórios          Colaboradores
-                                                               │
-                                                               ▼
-                                                        Solicitações / IA
+                       projetos        projeto
+                                          │
+                                          ▼
+                               ┌─────────────────┐
+                               │ Detalhes projeto│
+                               └────────┬────────┘
+                                          │
+                   ┌──────────────────────┼──────────────────────┐
+                   ▼                      ▼                      ▼
+              Tecnologias            Repositórios          Colaboradores
+                                                                 │
+                                                                 ▼
+                                                         Solicitações / IA
+
 ```
 
 ## 🚀 Como executar
@@ -174,12 +188,14 @@ Antes de executar o projeto, certifique-se de ter instalado:
 
 ```bash
 git clone URL_DO_REPOSITORIO
+
 ```
 
 Entre na pasta:
 
 ```bash
 cd Fronts_Projeto-main
+
 ```
 
 ### 2. Crie um ambiente virtual
@@ -189,6 +205,7 @@ Linux/macOS:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+
 ```
 
 Windows:
@@ -196,24 +213,28 @@ Windows:
 ```bash
 python -m venv venv
 venv\Scripts\activate
+
 ```
 
 ### 3. Instale as dependências
 
 ```bash
 pip install -r requirements.txt
+
 ```
 
 ### 4. Execute a aplicação
 
 ```bash
 python app.py
+
 ```
 
 Caso esteja utilizando Gunicorn para execução em produção:
 
 ```bash
 gunicorn app:app
+
 ```
 
 Depois, acesse a aplicação pelo endereço disponibilizado pelo servidor.
@@ -272,6 +293,7 @@ HTML → Estrutura das páginas
 CSS  → Estilização e identidade visual
 JS   → Interações e funcionalidades
 Flask → Rotas e renderização
+
 ```
 
 Essa separação facilita a manutenção e evolução da aplicação.
