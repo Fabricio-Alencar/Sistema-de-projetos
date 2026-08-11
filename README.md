@@ -18,9 +18,10 @@ O **Projack Impulse** utiliza uma arquitetura baseada em microsserviços. Este r
 > **Nota para desenvolvedores:** Os repositórios dos microsserviços abaixo são independentes e podem utilizar diferentes linguagens, dependências ou estruturas de pastas em relação a este repositório principal.
 
 * **Front-end / Interface (Este repositório):** Interface gráfica, navegação e integração visual com as APIs.
-* **Microsserviço de IA:** `[Cole o link do repositório da IA aqui]` — Responsável pelos algoritmos de recomendação e seleção de colaboradores.
-* **Microsserviço de Back-end / Autenticação:** `[Cole o link do repositório aqui]` — Gerenciamento de usuários, autenticação e dados centrais.
-* **[Outro Microsserviço]:** `[Cole o link do repositório aqui]` — *Descrição resumida do serviço.*
+* **Microsserviço de IA (Micro_IA):** [GitHub](https://github.com/Fabricio-Alencar/Micro_IA.git) — Responsável pelos algoritmos de recomendação e seleção inteligente de colaboradores.
+* **Microsserviço de Colaboradores (Micro_Colaboradores):** [GitHub](https://github.com/Fabricio-Alencar/Micro_Colaboradores.git) — Gerenciamento de solicitações de participação, membros e equipes dos projetos.
+* **Microsserviço de Idealizadores (Micro_Idealizadores):** [GitHub](https://github.com/Fabricio-Alencar/Micro_Idealizadores.git) — Gestão e manutenção dos perfis dos criadores/idealizadores de projetos.
+* **Microsserviço de Projetos (Micro_Projetos):** [GitHub](https://github.com/Fabricio-Alencar/Micro_Projetos.git) — Criação, edição, gerenciamento e renderização do ciclo de vida dos projetos.
 
 ## ✨ Funcionalidades
 
