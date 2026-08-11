@@ -298,7 +298,3 @@ O **Projack Impulse** foi desenvolvido como um projeto acadêmico com o objetivo
 ## 👨‍💻 Autores
 
 Projeto desenvolvido por estudantes da **Escola de Engenharia da Universidade Presbiteriana Mackenzie**.
-
----
-
-⭐ Se este projeto foi útil ou interessante para você, considere deixar uma estrela no repositório.
